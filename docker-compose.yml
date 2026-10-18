@@ -1,0 +1,8 @@
+services:
+  hema-birthday:
+    build: .
+    image: hema-birthday:latest
+    container_name: hema-birthday
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
